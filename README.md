@@ -1,25 +1,34 @@
 # lein-heroku-deploy
 
-A Leiningen plugin to do many wonderful things.
+Leinengen plugin to simplify Heroku deploy.
 
 ## Usage
 
-FIXME: Use this for user-level plugins:
-
-Put `[lein-heroku-deploy "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your
-`:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-lein-heroku-deploy 0.1.0-SNAPSHOT`.
-
-FIXME: Use this for project-level plugins:
-
 Put `[lein-heroku-deploy "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
 
-FIXME: and add an example usage that actually makes sense:
+Add heroku app info to project.clj
+
+```clojure
+:heroku {
+  :app-name "still-sands-6666"
+  :app-url "http://still-sands-6666.herokuapp.com"
+}
+```
+
+Then simply run
 
     $ lein heroku-deploy
 
+It will
+
+ * activate maintenance mode
+ * push your app to heroku
+ * restart app
+ * deactivate maintenance mode
+ * warm up app
+
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Max Prokopiev
 
 Distributed under the Eclipse Public License, the same as Clojure.
