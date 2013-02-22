@@ -4,7 +4,7 @@ Leinengen plugin to simplify Heroku deploy.
 
 ## Usage
 
-Put `[lein-heroku-deploy "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
+Put `[lein-heroku-deploy "0.1.0"]` into the `:plugins` vector of your project.clj.
 
 Add heroku app info to project.clj
 

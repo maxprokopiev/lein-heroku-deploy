@@ -4,4 +4,5 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[clansi "1.0.0"]]
+  :plugins [[lein-clojars "0.9.1"]]
   :eval-in-leiningen true)
