@@ -1,6 +1,6 @@
 # lein-heroku-deploy
 
-Leinengen plugin to simplify Heroku deploy.
+Leiningen plugin to simplify Heroku deploy.
 
 ## Usage
 
